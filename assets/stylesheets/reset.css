@@ -1,0 +1,218 @@
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
+}
+body {
+  line-height: 1
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+nav ul {
+  list-style: none
+}
+blockquote, q {
+  quotes: none
+}
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
+}
+/ change colours to suit your needs / ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none
+}
+/ change colours to suit your needs / mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700
+}
+del {
+  text-decoration: line-through
+}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0
+}
+input, select {
+  vertical-align: middle
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+common
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-family: yu-mincho-pr6n, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 2.0;
+  letter-spacing: 0.25em;
+  background: #fff;
+  font-feature-settings: "palt";
+}
+*, *:before, *:after {
+  color: #333;
+}
+input, textarea, select {
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 'Noto Sans JP', "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: 700;
+}
+a, a:link, a:visited {
+  text-decoration: none;
+}
+a:active, a:hover {
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+}
+*:focus {
+  outline: none;
+}
+h1, h2, h3, h4, h5 {
+  line-height: 1.5;
+  font-weight: 700;
+}
+li {
+  list-style-type: none;
+}
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+img {
+  border: 0;
+  line-height: 0;
+  vertical-align: bottom;
+}
+svg {
+  vertical-align: bottom;
+}
+hr {
+  display: none;
+}
+table {
+  margin: 0;
+  padding: 0;
+}
+th {
+  text-align: left;
+  font-weight: bold;
+  margin: 0;
+}
+td {
+  margin: 0;
+}
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+label {
+  margin: 0;
+  padding: 0;
+}
+address {
+  font-style: normal;
+}
+a, span, u, b {
+  color: inherit;
+}
+::-moz-selection {
+  background-color: #000;
+  color: #fff;
+}
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+.font_sans {
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 'Noto Sans JP', "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+.font_en {
+  font-family: 'San Francisco', 'Roboto', sans-serif;
+}
+@media screen and (max-width: 900px) {
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.85;
+    font-size: 1.3rem;
+  }
+}
+
+/* iOSでのデフォルトスタイルをリセット */
+
+input[type="submit"], input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration, input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus, input[type="button"]::focus {
+  outline-offset: -2px;
+}
+input[type="text"], input[type="email"], textarea {
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* clearfix */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
