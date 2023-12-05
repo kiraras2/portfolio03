@@ -542,3 +542,7 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
   overflow: hidden
 }
+
+.p-swiper-slide img {
+  width: 100%;
+}
