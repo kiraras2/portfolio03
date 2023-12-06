@@ -30,7 +30,7 @@ a {
   vertical-align: baseline;
   background: transparent
 }
-/ change colours to suit your needs / ins {
+/* / change colours to suit your needs / ins {
   background-color: #ff9;
   color: #000;
   text-decoration: none
@@ -40,7 +40,7 @@ a {
   color: #000;
   font-style: italic;
   font-weight: 700
-}
+} */
 del {
   text-decoration: line-through
 }
