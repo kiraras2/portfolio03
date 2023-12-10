@@ -1,0 +1,80 @@
+@media screen and (max-width: 768px) {
+  .l-sp_header {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    position: fixed;
+    transition: padding .5s;
+    transition: background-color .5s;
+    width: 100%;
+  }
+  .l-sp_header.transform {
+    background-color: #FFF;
+    padding: 20px 0;
+  }
+  .open .l-sp_header_logo {
+    pointer-events: visible;
+    top: 10px;
+  }
+  .open .l-sp_header_bg {
+    opacity: 1;
+    pointer-events: visible;
+    height: 64px;
+  }
+  .open .c-global_nav {
+    transform: translateX(0);
+  }
+  .open .c-hamburger span:nth-child(1) {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  .open .c-hamburger span:nth-child(2) {
+    top: -13px;
+    transform: rotate(-45deg);
+  }
+  .c-hamburger_box.active {
+    top: 16px;
+  }
+  .pc_p-nav_logo.active {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  .c-global_nav {
+    position: fixed;
+    top: -100%; /*ハンバーガーがクリックされる前はWindow上部に隠す*/
+    left: 0;
+    width: 100%; /* 出てくるスライドメニューの幅 */
+    height: 80vh;
+    background: #A2C2CA;
+    transition: all 0.5s;
+    z-index: 200;
+    overflow-y: auto;
+  }
+  /*ハンバーガーがクリックされたら上からスライド*/
+  .open .c-global_nav {
+    top: 0;
+  }
+  /*
+  black-bg(ハンバーガーメニュー解除用bg)
+  =================================== */
+  .p-black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 100;
+  }
+  /*ハンバーガーメニューが開いたら表示*/
+  .open .p-black-bg {
+    opacity: 0.3;
+    visibility: visible;
+  }
+}
