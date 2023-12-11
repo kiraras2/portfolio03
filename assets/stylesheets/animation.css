@@ -1,17 +1,29 @@
 @media screen and (max-width: 768px) {
   .l-sp_header {
-    background-color: aliceblue;
+    background-color: #FFF;
     display: flex;
     justify-content: center;
     padding: 40px 0;
     position: fixed;
     transition: padding .5s;
-    transition: background-color .5s;
     width: 100%;
   }
   .l-sp_header.transform {
+    z-index: 9997;
     background-color: #FFF;
     padding: 20px 0;
+  }
+  .c-btn_hamburger_box .transform {
+    color: #000;
+  }
+  .l-sp_header_logo .transform {
+    display: block;
+    position: fixed;
+    width: 45px;
+    left: 23px;
+    top: 20px;
+    opacity: 1;
+    z-index: 9997;
   }
   .open .l-sp_header_logo {
     pointer-events: visible;
@@ -26,17 +38,17 @@
     transform: translateX(0);
   }
   .open .c-hamburger span:nth-child(1) {
-    top: 5px;
+    top: 11px;
     transform: rotate(45deg);
   }
   .open .c-hamburger span:nth-child(2) {
-    top: -13px;
+    top: 11px;
     transform: rotate(-45deg);
   }
-  .c-hamburger_box.active {
+  .open .c-hamburger_box {
     top: 16px;
   }
-  .pc_p-nav_logo.active {
+  .open .pc_p-nav_logo {
     opacity: 1;
     pointer-events: visible;
   }
@@ -76,5 +88,27 @@
   .open .p-black-bg {
     opacity: 0.3;
     visibility: visible;
+  }
+}
+@media screen and (min-width: 768px) {
+.c-pc_nav li a {
+  position: relative;
+  text-decoration: none;
+}
+
+.c-pc_nav li a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  bottom: -1px;               /*アンダーラインがaタグの下端から現れる*/
+  transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+  transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+  transition: transform 0.3s; /*変形の時間*/
+  }
+  .c-pc_nav li a:hover::after {
+  transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
   }
 }

@@ -8,10 +8,17 @@ $(function () {
   });
 });
 
+$('.p-swiper-slide img:nth-child(n+2)').hide();
+setInterval(function() {
+  $(".p-swiper-slide img:first-child").fadeOut(1000);
+  $(".p-swiper-slide img:nth-child(2)").fadeIn(1000);
+  $(".p-swiper-slide img:first-child").appendTo(".p-swiper-slide");
+}, 3000);
+
 window.onload = function () {
-  var nav = document.getElementById('nav-wrapper');
-  var btn = document.getElementById('js-btn');
-  var blackBg = document.getElementById('js-black-bg');
+  let nav = document.getElementById('nav-wrapper');
+  let btn = document.getElementById('js-btn');
+  let blackBg = document.getElementById('js-black-bg');
 
   btn.addEventListener('click', function () {
       nav.classList.toggle('open');
