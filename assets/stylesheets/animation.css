@@ -1,3 +1,14 @@
+.js-scroll-fade {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s,visibility 1s, transform 1s;
+}
+.scroll {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
 @media screen and (max-width: 768px) {
   .l-sp_header {
     background-color: #FFF;
@@ -11,7 +22,23 @@
   .l-sp_header.transform {
     z-index: 9997;
     background-color: #FFF;
-    padding: 20px 0;
+    padding: 33px 0;
+  }
+  .transform .c-btn_store {
+    background: #7dc2d1;
+  }
+  .transform .c-btn_store p {
+    color: #FFF;
+  }
+  .transform .c-hamburger span {
+    background-color: #000;
+  }
+  .transform .l-sp_header_logo {
+    width: 100%;
+  }
+  .pc_nav_logo.active {
+    opacity: 1;
+    pointer-events: visible;
   }
   .c-btn_hamburger_box .transform {
     color: #000;
@@ -54,61 +81,69 @@
   }
   .c-global_nav {
     position: fixed;
-    top: -100%; /*ハンバーガーがクリックされる前はWindow上部に隠す*/
+    top: 0%;
     left: 0;
-    width: 100%; /* 出てくるスライドメニューの幅 */
-    height: 80vh;
-    background: #A2C2CA;
+    width: 100%;
+    height: 100vh;
+    background-color: #A2C2CA;
     transition: all 0.5s;
     z-index: 200;
     overflow-y: auto;
-  }
-  /*ハンバーガーがクリックされたら上からスライド*/
-  .open .c-global_nav {
-    top: 0;
-  }
-  /*
-  black-bg(ハンバーガーメニュー解除用bg)
-  =================================== */
-  .p-black-bg {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 5;
-    background-color: #000;
     opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s;
-    cursor: pointer;
-    z-index: 100;
   }
-  /*ハンバーガーメニューが開いたら表示*/
-  .open .p-black-bg {
-    opacity: 0.3;
-    visibility: visible;
+  .noscroll {
+    overflow: hidden;
+  }
+  .open .c-global_nav {
+    opacity: 1;
+  }
+  .open .c-btn_store {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
-.c-pc_nav li a {
-  position: relative;
-  text-decoration: none;
-}
-
-.c-pc_nav li a::after {
-  position: absolute;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: #000000;
-  bottom: -1px;               /*アンダーラインがaタグの下端から現れる*/
-  transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
-  transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
-  transition: transform 0.3s; /*変形の時間*/
+  .c-pc_nav li a {
+    position: relative;
+    text-decoration: none;
   }
-  .c-pc_nav li a:hover::after {
-  transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+  .c-pc_nav li a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+  }
+  .c-pc_nav li:nth-child(1) a:hover::after {
+  transform: scale(1, 1);
+  }
+  .c-pc_nav li:nth-child(2) a:hover::after {
+    transform: scale(1, 1);
+  }
+  .c-pc_nav li:nth-child(3) a:hover::after {
+    transform: scale(1, 1);
+  }
+  .c-pc_nav li:nth-child(4) a:hover::after {
+    transform: scale(1, 1);
+  }
+  .c-pc_nav li:nth-child(5) a:hover::after {
+    transform: scale(1, 1);
+  }
+  .c-pc_nav li:nth-child(6) a:hover::after {
+    transform: scale(1, 1);
+  }
+  .c-pc_nav li:nth-child(7) a:hover::after {
+    transform: scale(1, 1);
+  }
+  .p-pc_nav_btn_store:hover {
+    display: block;
+    background-color: #000;
+  }
+  .c-pc_nav li svg:hover {
+    color: #7DC2D1;
   }
 }

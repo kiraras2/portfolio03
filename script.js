@@ -18,12 +18,21 @@ setInterval(function() {
 window.onload = function () {
   let nav = document.getElementById('nav-wrapper');
   let btn = document.getElementById('js-btn');
-  let blackBg = document.getElementById('js-black-bg');
-
   btn.addEventListener('click', function () {
       nav.classList.toggle('open');
-  });
-  blackBg.addEventListener('click', function () {
-      nav.classList.remove('open');
+      document.documentElement.classList.toggle('noscroll');
+      document.body.classList.toggle('noscroll');
   });
 };
+$(function(){
+  $(window).scroll(function (){
+    $('.js-scroll-fade').each(function(){
+      var pos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > pos - windowHeight + 100){
+        $(this).addClass('scroll');
+      }
+    });
+  });
+});
