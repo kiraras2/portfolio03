@@ -9,6 +9,10 @@ body {
   width: 100%;
   font-family: serif;
 }
+main {
+  position: relative;
+  display: block;
+}
 a {
   text-decoration: none;
 }
@@ -69,8 +73,15 @@ nav ul {
     z-index: 10;
   }
   .p-center_box:after {
+    content: "";
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
     background: #fff;
     z-index: 10;
+}
   }
   .p-contents_box_border {
     border: 1px solid #000;
@@ -318,8 +329,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   footer {
-    margin-bottom: 13px;
-    padding: 20px 30px;
+    padding: 0;
   }
   .l-footer_menu, .l-footer_menu_ttl {
     display: none;
@@ -435,7 +445,7 @@ main img {
   margin: auto;
 }
 .p-top_fv_scroll {
-  width: 100px;
+  width: 100%;
   list-style-type: none;
   text-align: center;
   color: #FFF;
@@ -443,7 +453,7 @@ main img {
   z-index: 2;
   font-family: auto;
   font-weight: bold;
-  margin-top: 597px 151px;
+  bottom: 50px;
 }
 .p-top_fv_scroll p {
   font-size: 15px;
