@@ -1,7 +1,7 @@
 .js-scroll-fade {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(50px);
+  transform: translateY(120px);
   transition: opacity 1s,visibility 1s, transform 1s;
 }
 .scroll {
@@ -29,6 +29,8 @@
   }
   .transform .c-btn_store p {
     color: #FFF;
+    font-family: auto;
+    font-weight: bold;
   }
   .transform .c-hamburger span {
     background-color: #000;

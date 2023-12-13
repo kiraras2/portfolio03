@@ -114,11 +114,11 @@ nav ul {
 .p-sp_nav_main li p {
   text-align: center;
   color: #FFF;
-  font-size: 18px;
+  font-size: 23px;
   letter-spacing: 3px;
-  font-family: auto;
-  font-weight: bold;
-  line-height: 27px;
+  font-family: system-ui;
+  font-weight: 500;
+  line-height: 25px;
 }
 .p-sp_nav_main li {
   list-style-type: none;
@@ -130,21 +130,20 @@ nav ul {
   margin-left: 174px;
 }
 .p-sp_nav_store {
-  width: 49.17%;
+  width: 48%;
   margin: 26px auto;
-  padding: 2px;
   background: #fff;
   border-radius: 1.28vw;
   box-sizing: border-box;
-  line-height: 0;
 }
 .p-sp_nav_store p {
   text-align: center;
   color: #000;
-  font-family: auto;
-  font-weight: bold;
   letter-spacing: 3px;
-  font-size: 18px;
+  font-family: system-ui;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px;
 }
 .sp_nav_instagram {
   width: 8.29%;
@@ -436,13 +435,15 @@ main img {
   margin: auto;
 }
 .p-top_fv_scroll {
-  width: 400px;
+  width: 100px;
   list-style-type: none;
   text-align: center;
-  margin: 566px auto;
   color: #FFF;
   position: absolute;
   z-index: 2;
+  font-family: auto;
+  font-weight: bold;
+  margin-top: 597px 151px;
 }
 .p-top_fv_scroll p {
   font-size: 15px;
