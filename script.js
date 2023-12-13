@@ -27,10 +27,10 @@ window.onload = function () {
 $(function(){
   $(window).scroll(function (){
     $('.js-scroll-fade').each(function(){
-      var pos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > pos - windowHeight + 100){
+      let pos = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let windowHeight = $(window).height();
+      if (scroll > pos - windowHeight + 200){
         $(this).addClass('scroll');
       }
     });
