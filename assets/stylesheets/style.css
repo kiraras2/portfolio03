@@ -216,29 +216,8 @@ body.open .c-hamburger span:nth-child(2) {
 .p-center_box .p-top_inner {
   padding: 0 6.14%;
 }
-.c-btn_store {
-  top: 15px;
-  right: 77px;
-  z-index: 9999;
-  border: solid 1px #b22222;
-  border-radius: 6px;
-  background: #b22222;
-  text-align: center;
-  margin: -23px -373px -4px 189px;
-}
 body.home .c-btn_store a {
   background: #fff;
-}
-.c-btn_store p {
-  font-size: 10px;
-  padding: 6px;
-  letter-spacing: 1px;
-  line-height: 12px;
-  margin: auto;
-  font-family: auto;
-  font-weight: bold;
-  color: #000;
-  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .c-btn_store, .l-sp_header_logo {
@@ -262,6 +241,27 @@ body.home .c-btn_store a {
   body.home .l-sp_header_logo {
     opacity: 0;
     pointer-events: none;
+  }
+  .c-btn_store {
+    top: 15px;
+    right: 77px;
+    z-index: 9999;
+    border: solid 1px #b22222;
+    border-radius: 6px;
+    background: #b22222;
+    text-align: center;
+    margin: -23px -373px -4px 189px;
+  }
+  .c-btn_store p {
+    font-size: 10px;
+    padding: 6px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    margin: auto;
+    font-family: auto;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
   }
   .p-arrow {
     border-left: 4px solid black;
