@@ -25,11 +25,15 @@
   }
   .transform .c-btn_store {
     background: #7dc2d1;
+    border: solid 1px #FFF;
   }
   .transform .c-btn_store p {
     color: #FFF;
     font-family: auto;
     font-weight: bold;
+  }
+  .transform .p-arrow {
+    border-left: 4px solid #FFF;
   }
   .transform .c-hamburger span {
     background-color: #000;
@@ -61,6 +65,9 @@
     pointer-events: visible;
     top: 10px;
   }
+  .open .l-sp_header {
+    z-index: 1000;
+  }
   .open .l-sp_header_bg {
     opacity: 1;
     pointer-events: visible;
@@ -73,10 +80,12 @@
   .open .c-hamburger span:nth-child(1) {
     top: 11px;
     transform: rotate(45deg);
+    z-index: 9999;
   }
   .open .c-hamburger span:nth-child(2) {
     top: 11px;
     transform: rotate(-45deg);
+    z-index: 9999;
   }
   .open .c-hamburger_box {
     top: 16px;
@@ -113,9 +122,6 @@
     opacity: 1;
     z-index:999;
   }
-  /* .open .c-btn_store {
-    display: none;
-  } */
 }
 @media screen and (min-width: 768px) {
   .c-pc_nav li a {
