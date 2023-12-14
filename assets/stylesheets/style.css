@@ -168,22 +168,16 @@ nav ul {
   width: 100%;
 }
 .c-btn_hamburger_box {
-  display: block;
-  width: 38px;
   height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10000;
-  position: fixed;
-  top: 18px;
-  right: 23px;
+  position: relative;
+  margin: -21px 0px 0px 392px;
 }
 .c-hamburger span {
   content: "";
   width: 38px;
   height: 3px;
   display: block;
-  background: #FFF;
+  background: #888888;
   position: absolute;
 }
 body.home .c-hamburger span {
@@ -223,13 +217,14 @@ body.open .c-hamburger span:nth-child(2) {
   padding: 0 6.14%;
 }
 .c-btn_store {
-  position: fixed;
   top: 15px;
   right: 77px;
   z-index: 9999;
   border: solid 1px #FFF;
   border-radius: 6px;
   background: #FFF;
+  text-align: center;
+  margin: -23px -373px -4px 189px;
 }
 body.home .c-btn_store a {
   background: #fff;
@@ -589,6 +584,7 @@ main img {
   .p-top_concept_copy p {
     font-size: 16px;
     font-weight: bold;
+    font-family: HG明朝E;
   }
   .p-top_about_item_ph img {
     height: 530px;
