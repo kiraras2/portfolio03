@@ -531,6 +531,7 @@ main img {
     letter-spacing: 2px;
     font-family: auto;
     font-size: 14px;
+    font-weight: bold;
   }
   .p-top_fv_ph img {
     object-fit: cover;
